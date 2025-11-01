@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-hue: 270;
+    --color-primary: hsl(var(--primary-hue), 89%, 41%);
+    --light-lightness: 94%;
+    --white-lightness: 100%;
+    --black-lightness: 15%;
+    --color-white: hsl(0, 5%, var(--white-lightness));
+    --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+    --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+    /* GENERAL CONTAINER VARIABLES */
+    --container-width-lg: 76%;
+
+
+    /* GENERAL TRANSITION VARIABLE */
+    --transition: all 500ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* GENERAL CONTAINER CLASS */
+.container {
+    width: var(--container-width-lg);
+    margin-inline: auto;
+    max-width: 1920px;
+}
+
+/* GENERAL SECTION STYLES */
+section {
+    padding: 10rem 0;
+    background: var(--color-light);
+    transition: var(--transition);
+}
+
+section:nth-child(even) {
+    background: var(--color-white);
+}
+
+section > h2 {
+    text-align: center;
+}
+
+/* GENERAL SECTION STYLES */
+
+a {
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+/* GENERAL HEADING STYLES */
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    color: var(--color-black);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 0.95rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+/* GENERAL IMAGES STYLE */
+
+.img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
