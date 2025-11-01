@@ -1,7 +1,21 @@
+import Navbar from './sections/navbar/Navbar';
+import Header from './sections/header/Header';
+import About from './sections/about/About';
+import FAQs from './sections/faqs/FAQs';
+import Contact from './sections/contact/Contact';
+import Footer from './sections/footer/Footer';
 
 const App = () => {
   return (
-    <div>App</div>
+    <main>
+      <Navbar/>
+      <Header/>
+      <About/>
+      <FAQs/>
+      <Contact/>
+      <Footer/>
+
+    </main>
   )
 }
 
