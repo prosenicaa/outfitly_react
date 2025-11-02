@@ -1,0 +1,132 @@
+header {
+    padding-top: 6rem;
+    min-height: 85vh;
+    display: grid;
+    place-items: center;
+    background: var(--color-white);
+    transition: var(--transition);
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header__picture {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.header__picture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+.header__container p {
+    width: 35rem;
+    text-align: center;
+    margin: 0.6rem 0 2rem;
+}
+
+.header__cta {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+
+.header__socials {
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header__socials a {
+    width: 1.8rem;
+    aspect-ratio: 1/1;
+    background: var(--color-light);
+    color: var(--color-black);
+    display: grid;
+    place-items: center;
+    border-radius: var(--border-radius-3);
+}
+
+.header__socials a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateX(-0.5rem);
+}
+
+/* MEDIA QUERY (tablets) */
+
+@media screen and (max-width: 1024px){
+    header {
+        padding-top: 5rem;
+        min-height: 100vh;
+    }
+
+    .header__picture {
+        width: 75%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .header__container h3 {
+        font-size: 2.4rem;
+        margin-top: 1rem;
+    }
+
+    .header__container p {
+        width: 80%;
+        font-size: 1.1rem;
+        margin: 1rem 0 2rem;
+    }
+
+    .header__cta {
+        gap: 1.5rem;
+        transform: scale(1.1);
+    }
+
+    .header__socials {
+        bottom: 8rem;
+        left: 1rem;
+        transform: scale(1.1);
+    }
+}
+
+/* MEDIA QUERY (phones) */
+
+@media screen and (max-width: 600px){
+
+
+    .header__picture {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .header__container p {
+        width: 100%;
+    }
+
+    .header__cta {
+        gap: 1rem;
+    }
+
+    .header__socials {
+        display: none;
+    }
+}
