@@ -5,7 +5,7 @@ import Card from '../../components/Card'
 
 const Features = () => {
   return (
-    <section>
+    <section id="features">
         <h2>Why You'll Love Outfitly</h2>
         <p>We offer you a complete style experience designed to inspire, organize, 
         and elevate your everyday look.</p>
