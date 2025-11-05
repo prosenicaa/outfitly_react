@@ -2,6 +2,7 @@ import Navbar from './sections/navbar/Navbar';
 import Header from './sections/header/Header';
 import About from './sections/about/About';
 import Feature from './sections/features/Features'
+import Inspiration from './sections/outfits/Inspiration'
 import FAQs from './sections/faqs/FAQs';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
@@ -13,6 +14,7 @@ const App = () => {
       <Header/>
       <About/>
       <Feature/>
+      <Inspiration/>
       <FAQs/>
       <Contact/>
       <Footer/>

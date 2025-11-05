@@ -146,3 +146,16 @@ h6 {
     border-color: var(--color-primary);
     color: var(--color-primary);
 }
+
+.btn.sm {
+    padding: 0.5rem 1.2rem;
+}
+
+.btn.white {
+    background: var(--color-white);
+}
+
+.btn.white:hover {
+    background: transparent;
+    border-color: var(--color-white);
+}
