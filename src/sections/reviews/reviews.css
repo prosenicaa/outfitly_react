@@ -1,0 +1,44 @@
+#reviews {
+    padding-bottom: 0;
+}
+
+.swiper {
+    height: fit-content;
+    padding-bottom: 12rem;
+    padding-top: 1rem;
+}
+
+.swiper-slide {
+    cursor: grab;
+}
+
+.review__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.review__user-avatar {
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.review__user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.swiper-pagination {
+margin-bottom: 8rem;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primary);
+}
