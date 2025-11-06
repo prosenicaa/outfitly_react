@@ -16,7 +16,7 @@ const Header = () => {
           that fits you.</p>
           <div className="header__cta">
             <a href="#contact" className='btn primary'>Let's talk</a>
-            <a href="#outfits" className='btn light'>Outfits</a>
+            <a href="#inspiration" className='btn light'>Outfits</a>
           </div>
           <div className="header__socials">
             {
